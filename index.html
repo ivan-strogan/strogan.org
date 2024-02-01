@@ -1,41 +1,312 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+    <title>Ivan Strogan, Software Engineer</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ivan Strogan - Software Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: 'Arial', sans-serif;
-        background-color: rgb(224, 223, 223);
-        color: rgb(35, 45, 150);
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: 'Montserrat', sans-serif;
       }
-
-      h1 {
-        font-size: 3em;
-        margin-bottom: 0.5em;
+      .is-row-padding img {
+        margin-bottom: 12px;
       }
-
-      p {
-        font-size: 1.2em;
-        margin: 0.5em 0;
+      .bgimg {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('images/headshot.jpeg');
+        min-height: 100%;
       }
     </style>
   </head>
-
   <body>
-    <h1>Ivan Strogan</h1>
-    <p>Software Developer</p>
-    <!-- Add more sections or details about yourself as needed -->
+    <!-- Sidebar with image -->
+    <nav class="is-sidebar is-hide-medium is-hide-small" style="width: 30%">
+      <div class="bgimg"></div>
+    </nav>
 
-    <!-- You can also add social media links, portfolio links, etc. -->
+    <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+    <!-- <nav
+      class="is-sidebar is-black is-animate-right is-xxlarge"
+      style="display: none; padding-top: 150px; right: 0; z-index: 2"
+      id="mySidebar"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="closeNav()"
+        class="is-button is-black is-xxxlarge is-display-topright"
+        style="padding: 0 12px"
+      >
+        <i class="fa fa-remove"></i>
+      </a>
+      <div class="is-bar-block is-center">
+        <a
+          href="#"
+          class="is-bar-item is-button is-text-grey is-hover-black"
+          onclick="closeNav()"
+          >Home</a
+        >
+        <a
+          href="#portfolio"
+          class="is-bar-item is-button is-text-grey is-hover-black"
+          onclick="closeNav()"
+          >Portfolio</a
+        >
+        <a
+          href="#about"
+          class="is-bar-item is-button is-text-grey is-hover-black"
+          onclick="closeNav()"
+          >About</a
+        >
+        <a
+          href="#contact"
+          class="is-bar-item is-button is-text-grey is-hover-black"
+          onclick="closeNav()"
+          >Contact</a
+        >
+      </div>
+    </nav> -->
+
+    <!-- Page Content -->
+    <div class="is-main is-padding-large" style="margin-left: 40%">
+      <!-- Menu icon to open sidebar -->
+      <!-- <span
+        class="is-button is-top is-white is-xxlarge is-text-grey is-hover-text-black"
+        style="width: auto; right: 0"
+        onclick="openNav()"
+        ><i class="fa fa-bars"></i
+      ></span> -->
+
+      <!-- Header -->
+      <header
+        class="is-container is-center"
+        style="padding: 128px 16px"
+        id="home"
+      >
+        <h1 class="is-jumbo"><b>Ivan Strogan</b></h1>
+        <p>Software Engineer</p>
+        <img
+          src="images/profile_git.jpg"
+          class="is-image is-hide-large is-hide-small is-round"
+          style="display: block; width: 60%; margin: auto"
+        />
+        <img
+          src="images/profile_git.jpg"
+          class="is-image is-hide-large is-hide-medium is-round"
+          width="1000"
+          height="1333"
+        />
+        <!-- <button class="is-button is-light-grey is-padding-large is-margin-top">
+          <i class="fa fa-download"></i> Download Resume
+        </button> -->
+      </header>
+
+      <!-- Portfolio Section -->
+      <div class="is-padding-32 is-content" id="portfolio">
+        <h2 class="is-text-grey">My Portfolio</h2>
+        <hr class="is-opacity" />
+
+        <!-- Grid for photos -->
+        <div class="is-row-padding" style="margin: 0 -16px">
+          <div class="is-third">
+            <img src="images/logo_HTML_5.svg" class="is_logo_icon" />
+            <img src="images/logo_Vue.svg" class="is_logo_icon" />
+            <img src="images/logo_rails.png" class="is_logo_icon" />
+            <img src="images/logo_AWS.svg" class="is_logo_icon" />
+          </div>
+
+          <div class="is-third">
+            <img src="images/logo_CSS_3.svg" class="is_logo_icon" />
+            <img src="images/logo_ Angular.png" class="is_logo_icon" />
+            <img src="images/logo_rspec.png" class="is_logo_icon" />
+            <img src="images/logo_DigitalOcean.svg" class="is_logo_icon" />
+          </div>
+
+          <div class="is-third">
+            <img src="images/logo_JS.svg" class="is_logo_icon" />
+            <img src="images/logo_Cypress.png" class="is_logo_icon" />
+            <img src="images/logo_Postgresql.svg" class="is_logo_icon" />
+            <img src="images/logo_DataDog.png" class="is_logo_icon" />
+          </div>
+          <!-- End photo grid -->
+        </div>
+        <!-- End Portfolio Section -->
+      </div>
+
+      <!-- About Section -->
+      <div class="is-content is-justify is-text-grey is-padding-32" id="about">
+        <h2>About</h2>
+        <hr class="is-opacity" />
+        <p>
+          I am a passionate software engineer that pushes the envelope of
+          technology to bring elegant solutions.
+        </p>
+        <h3 class="is-padding-16">My Skills</h3>
+        <p class="is-wide">Back End</p>
+        <div class="is-light-grey">
+          <div
+            class="is-container is-center is-padding-small is-dark-grey"
+            style="width: 95%"
+          >
+            95%
+          </div>
+        </div>
+        <p class="is-wide">Front End</p>
+        <div class="is-light-grey">
+          <div
+            class="is-container is-center is-padding-small is-dark-grey"
+            style="width: 75%"
+          >
+            75%
+          </div>
+        </div>
+        <p class="is-wide">DevOps</p>
+        <div class="is-light-grey">
+          <div
+            class="is-container is-center is-padding-small is-dark-grey"
+            style="width: 80%"
+          >
+            80%
+          </div>
+        </div>
+        <br />
+
+        <div class="is-row is-center is-dark-grey is-padding-16 is-section">
+          <div class="is-quarter is-section">
+            <span class="is-xlarge">14+</span><br />
+            Partners
+          </div>
+          <div class="is-quarter is-section">
+            <span class="is-xlarge">55+</span><br />
+            Projects Done
+          </div>
+          <div class="is-quarter is-section">
+            <span class="is-xlarge">89+</span><br />
+            Happy Clients
+          </div>
+          <div class="is-quarter is-section">
+            <span class="is-xlarge">150+</span><br />
+            Meetings
+          </div>
+        </div>
+
+        <!-- <button class="is-button is-light-grey is-padding-large is-section">
+          <i class="fa fa-download"></i> Download Resume
+        </button> -->
+
+        <!-- Testimonials -->
+        <!-- <h3 class="is-padding-24">My Reputation</h3>
+        <img
+          src="images/computer-code.jpeg"
+          alt="Avatar"
+          class="is-left is-circle is-margin-right"
+          style="width: 80px"
+        />
+        <p>
+          <span class="is-large is-text-black is-margin-right"
+            >Chandler Bing.</span
+          >
+          Web Designer.
+        </p>
+        <p>Jane Doe is just awesome. I am so happy to have met her!</p>
+        <br />
+
+        <img
+          src="images/computer-code.jpeg"
+          alt="Avatar"
+          class="is-left is-circle is-margin-right"
+          style="width: 80px"
+        />
+        <p>
+          <span class="is-large is-text-black is-margin-right">Chris Fox.</span>
+          CEO at Mighty Schools.
+        </p>
+        <p>Jane Doe saved us from a web disaster.</p>
+        <br />
+
+        <img
+          src="images/computer-code.jpeg"
+          alt="Avatar"
+          class="is-left is-circle is-margin-right"
+          style="width: 80px"
+        />
+        <p>
+          <span class="is-large is-text-black is-margin-right"
+            >Rebecca Flex.</span
+          >
+          CEO at Company.
+        </p>
+        <p>No one is better than Jane Doe.</p>
+        <br /> -->
+
+        <!-- End About Section -->
+      </div>
+
+      <!-- Contact Section -->
+      <div
+        class="is-padding-32 is-content is-text-grey"
+        id="contact"
+        style="margin-bottom: 64px"
+      >
+        <h2>Contact Me</h2>
+        <hr class="is-opacity" />
+
+        <div class="is-section">
+          <p>
+            <i class="fa fa-map-marker fa-fw is-xxlarge is-margin-right"></i>
+            Edmonton AB, Canada
+          </p>
+          <p>
+            <i class="fa fa-envelope fa-fw is-xxlarge is-margin-right"> </i>
+            Email: inquires@strogan.org
+          </p>
+        </div>
+        <!-- End Contact Section -->
+      </div>
+
+      <!-- Footer -->
+      <footer
+        class="is-container is-padding-64 is-light-grey is-center is-opacity is-xlarge"
+        style="margin: -24px"
+      >
+        <i class="fa fa-facebook-official is-hover-opacity"></i>
+        <i class="fa fa-instagram is-hover-opacity"></i>
+        <i class="fa fa-snapchat is-hover-opacity"></i>
+        <i class="fa fa-pinterest-p is-hover-opacity"></i>
+        <i class="fa fa-twitter is-hover-opacity"></i>
+        <i class="fa fa-linkedin is-hover-opacity"></i>
+        <!-- End footer -->
+      </footer>
+
+      <!-- END PAGE CONTENT -->
+    </div>
+
+    <script>
+      // Open and close sidebar
+      function openNav() {
+        document.getElementById('mySidebar').style.width = '60%';
+        document.getElementById('mySidebar').style.display = 'block';
+      }
+
+      function closeNav() {
+        document.getElementById('mySidebar').style.display = 'none';
+      }
+    </script>
   </body>
 </html>
