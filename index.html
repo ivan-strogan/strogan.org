@@ -40,7 +40,7 @@
     <!-- Sidebar with image -->
     <nav class="is-sidebar is-hide-medium is-hide-small" style="width: 30%">
       <div class="bgimg"></div>
-      <div class="mask"></div>
+      <div class="mask-right"></div>
     </nav>
 
     <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
@@ -103,18 +103,22 @@
       >
         <h1 class="is-jumbo"><b>Ivan Strogan</b></h1>
         <p>Software Engineer</p>
-        <img
-          src="images/headshot.jpeg"
-          class="is-image is-hide-large is-hide-small is-round"
-          style="display: block; width: 60%; margin: auto"
-          opacity="0.5"
-        />
-        <img
-          src="images/headshot.jpeg"
-          class="is-image is-hide-large is-hide-medium is-round"
-          width="1000"
-          height="1333"
-        />
+        <div class="mask-container is-hide-large is-hide-small">
+          <img
+            src="images/headshot.jpeg"
+            class="is-image is-hide-large is-hide-small"
+            style="display: block; width: 60%; margin: auto; opacity: 0.75"
+          />
+          <div class="mask-all-sides-medium is-hide-large is-hide-small"></div>
+        </div>
+        <div class="mask-container is-hide-large is-hide-medium">
+          <img
+            src="images/headshot.jpeg"
+            class="is-image is-hide-large is-hide-medium"
+            style="opacity: 0.75"
+          />
+          <div class="mask-all-sides-small is-hide-large is-hide-medium"></div>
+        </div>
         <!-- <button class="is-button is-light-grey is-padding-large is-margin-top">
           <i class="fa fa-download"></i> Download Resume
         </button> -->
