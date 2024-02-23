@@ -1698,3 +1698,8 @@ a {
   position: relative;
   overflow: hidden;
 }
+
+footer.is-light-grey {
+  background: linear-gradient(to right, white, transparent 10%),
+    linear-gradient(to left, white, transparent 10%);
+}
